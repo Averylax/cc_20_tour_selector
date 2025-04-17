@@ -15,3 +15,4 @@ function DestinationSelector({ destinations, selected, onSelect }) {
   }
   
   export default DestinationSelector;
+  
