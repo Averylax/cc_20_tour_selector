@@ -23,3 +23,4 @@ function TourCard({ tour, onRemove }) {
 }
 
 export default TourCard;
+
