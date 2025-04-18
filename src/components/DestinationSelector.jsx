@@ -1,4 +1,4 @@
-function DestinationSelector({ destinations, selected, onSelect }) {
+function DestinationSelector({ destinations, selected, onSelect }) { // Component to select a destination from a dropdown
     return (
       <div className="mb-4 text-center">
         <select 
@@ -15,4 +15,3 @@ function DestinationSelector({ destinations, selected, onSelect }) {
   }
   
   export default DestinationSelector;
-  

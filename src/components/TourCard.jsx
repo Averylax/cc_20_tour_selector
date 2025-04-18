@@ -1,8 +1,8 @@
-import Gallery from './Gallery';
-import DestinationSelector from './DestinationSelector';
+import Gallery from './Gallery'; // Importing the Gallery component to display a grid of tour cards
+import DestinationSelector from './DestinationSelector'; // Importing DestinationSelector component to select a destination from a dropdown
 
-function TourCard({ tour, onRemove }) {
-    const { id, name, info, image, price } = tour;
+function TourCard({ tour, onRemove }) { // TourCard component to display individual tour cards
+    const { id, name, info, image, price } = tour; // Destructuring tour object to get individual properties
   
     return (
       <div className="border rounded p-4 shadow">

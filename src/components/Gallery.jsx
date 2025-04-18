@@ -1,9 +1,9 @@
-import TourCard from './TourCard';
+import TourCard from './TourCard'; // Importing the TourCard component to display individual tour cards
 
-function Gallery({ tours, loading, error, onRemove, onRefresh }) {
-  if (loading) return <p className="text-center">Loading...</p>;
-  if (error) return <p className="text-center text-red-500">{error}</p>;
-  if (tours.length === 0) {
+function Gallery({ tours, loading, error, onRemove, onRefresh }) { // Gallery component to display a grid of tour cards
+  if (loading) return <p className="text-center">Loading...</p>; // Show loading message while fetching data
+  if (error) return <p className="text-center text-red-500">{error}</p>; // Show error message if fetching fails
+  if (tours.length === 0) { // If no tours are available, show a message and a refresh button
     return (
       <div className="text-center">
         <p>No tours left. Refresh to reload.</p>
